@@ -1,0 +1,16 @@
+.textos2 {
+    font-weight: bold !important;
+}
+
+.text-decorator-none{
+    text-decoration:none;
+}
+
+.imgContato{
+    background-image: url('../../../public/Imagens/imgContato.png');
+    background-repeat: no-repeat; 
+    width: 60vh;
+    min-height: 100vh; 
+    background-size: contain; 
+    background-position: center;
+}
