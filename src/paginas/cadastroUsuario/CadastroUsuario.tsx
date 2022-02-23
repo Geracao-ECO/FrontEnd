@@ -1,9 +1,8 @@
 import React , {useState, useEffect, ChangeEvent } from 'react';
-import { useHistory } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Services';
 import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './CadastroUsuario.css';
 
 function CadastroUsuario() {
@@ -15,7 +14,9 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            tipo_usuario: '',
+            foto: ''
         })
 
     const [userResult, setUserResult] = useState<User>(
@@ -23,12 +24,15 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            tipo_usuario: '',
+            foto: ''
         })
 
     useEffect(() => {
         if (userResult.id != 0) {
             history.push("/login")
+            console.log (userResult)
         }
     }, [userResult])
 
@@ -49,7 +53,7 @@ function CadastroUsuario() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
         if(confirmarSenha === user.senha && user.senha.length >= 8){
-        cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
+        cadastroUsuario(`/usuario/cadastrar`, user, setUserResult)
         alert('Usuario cadastrado com sucesso')
         }else{
             alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
@@ -66,6 +70,8 @@ function CadastroUsuario() {
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal'fullWidth  required/>
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth placeholder="Insira no mínimo 8 caracteres" required />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth placeholder="Insira no mínimo 8 caracteres" required />
+                        <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='tipo_usuario' label='tipo_usuario' variant='outlined' name='tipo_usuario' margin='normal' placeholder="Informe se é membro ou ONG" fullWidth required />
+                        <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='foto' label='foto' variant='outlined' name='foto' margin='normal' placeholder="Insira o URL da foto" fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='btnCancelar'>
