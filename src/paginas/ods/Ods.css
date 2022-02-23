@@ -1,0 +1,32 @@
+.caixa{
+    background-color:  #daedfe ;
+    
+}
+
+.titulo{
+
+    color: #1a0c66!important;
+    
+}
+
+.botao{
+
+    border-color: #ffff !important;
+    background-color: #a30363;
+    color: #ffff !important;
+}
+
+.descricao{
+
+    color: #4d498f!important;
+    font-size: 20px ;
+}
+
+.imgOds{
+    background-image: url('../../../public/Imagens/imgODS.jpg');
+    background-repeat: no-repeat; 
+    width: 30vh;
+    min-height: 100vh; 
+    background-size: contain; 
+    background-position: center;
+}

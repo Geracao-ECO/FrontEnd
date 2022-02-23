@@ -25,3 +25,12 @@
     color: #4d498f!important;
     font-size: 10px ;
 }
+
+.imgInicio{
+        background-image: url('../../../public/Imagens/imgInicio.png');
+        background-repeat: no-repeat; 
+        width: 100vh;
+        min-height: 100vh; 
+        background-size: cover; 
+        background-position: right;
+}

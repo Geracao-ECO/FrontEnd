@@ -14,22 +14,37 @@ function Navbar() {
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="start">
+                        <Link to='/'className='text-decorator-none'>
                         <Box mx={4} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                <a href="/">Início</a>
-                            </Typography>
+                        <Typography variant="h6" color="inherit"  >
+                        Início
+                        </Typography>
                         </Box>
-                        <Box mx={4} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                            <a href="/sobre">Sobre nós</a>
-                            </Typography>
-                        </Box>
-                        <Box mx={4} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                            <a href="/contato">Contato</a>
-                            </Typography>
-                        </Box>
+                        </Link>
+
+                        <Link to='/sobre'className='text-decorator-none'>
+                            <Box mx={4} className='cursor'>
+                                <Typography variant="h6" color="inherit"  >
+                                Sobre nós
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to='/ods'className='text-decorator-none'>
+                            <Box mx={4} className='cursor'>
+                                <Typography variant="h6" color="inherit"  >
+                                    ODS 6?
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                       <Link to='/contato'className='text-decorator-none'>
+                            <Box mx={4} className='cursor'>
+                                <Typography variant="h6" color="inherit"  >
+                                    Contato
+                                </Typography>
+                            </Box>
+                        </Link>
 
                         <Link to='/login'className='text-decorator-none'>
                             <Box mx={4} className='cursor'>
@@ -39,7 +54,7 @@ function Navbar() {
                             </Box>
                         </Link>
                         
-                    </Box>
+                    
 
                 </Toolbar>
             </AppBar>

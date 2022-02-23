@@ -28,7 +28,7 @@ function Login() {
 
             useEffect(()=>{
                 if(token != ''){
-                    history.push('/home')
+                    history.push('/inicio')
                 }
             }, [token])
 
@@ -53,7 +53,7 @@ function Login() {
                         <TextField id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>
-                            <Link to='/sobre' className='text-decorator-none'>
+                            <Link to='/inicio' className='text-decorator-none'>
                                 <Button type='submit' variant='contained' color='primary'>
                                     Logar
                                 </Button>

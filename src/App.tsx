@@ -8,6 +8,7 @@ import Inicio from './paginas/inicio/Inicio';
 import Contato from "./paginas/contato/Contato";
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import './App.css';
+import Ods from './paginas/ods/Ods';
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
           
           <Route path='/sobre'>
               <Sobre />
+          </Route>
+
+          <Route path='/ods'>
+              <Ods />
           </Route>
 
           <Route path='/contato'>
