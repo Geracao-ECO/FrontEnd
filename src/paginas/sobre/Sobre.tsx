@@ -1,19 +1,73 @@
 import React from 'react';
 import { Grid, Box, Typography, } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './Sobre.css';
 
 function Sobre() {
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                    <Typography variant="h2" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'><p>Sobre nós:</p></Typography>
-                    <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center" className='descricao'>Planejamos uma rede social com foco em questões de água potável e saneamento básico, onde os membros da comunidade participam levantando preocupações, dando sugestões, planejando ações voltadas ao tema e se conectando com ONGs para que tudo seja comunicado aos órgãos responsáveis e alguma ação seja cobrada. A solução é a integração e cobrança para melhorias sobre o tema água potável e saneamento básico.</Typography>
-                    </Box>
-                </Grid>
                 
-                <Grid xs={6} className='imgSobre'>
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
+                </Grid>
+
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
+                </Grid>
+
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
+                </Grid>
+
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
+                </Grid>
+
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
+                </Grid>
+
+                <Grid alignItems="center" item xs={2}>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <GitHubIcon className='redes' /></a>
+                <a href="https://github.com/Geracao-ECO" target="_blank">
+                <LinkedInIcon className='redes' /></a>
+                <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
+                <EmailIcon className='redes' /></a></Box>
                 </Grid>
                 
             </Grid>

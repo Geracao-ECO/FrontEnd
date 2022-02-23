@@ -4,9 +4,10 @@
 }
 
 .titulo{
-
     color: #1a0c66!important;
-    
+    font-size: 30px;
+    align-items: center;
+
 }
 
 .botao{
@@ -22,7 +23,7 @@
     font-size: 10px ;
 }
 
-.imgSobre{
+.sobre{
     background-image: url('../../../public/Imagens/imgSobre.png');
     background-repeat: no-repeat; 
     width: 50vh;
