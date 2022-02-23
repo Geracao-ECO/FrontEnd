@@ -6,6 +6,7 @@ import Sobre from './paginas/sobre/Sobre';
 import Login  from './paginas/login/Login';
 import Inicio from './paginas/inicio/Inicio';
 import Contato from "./paginas/contato/Contato";
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import './App.css';
 
 function App() {
@@ -35,6 +36,12 @@ function App() {
           <Route path='/contato'>
               <Contato />
           </Route>
+
+          
+          <Route path='/cadastrousuario'>
+            <CadastroUsuario />
+          </Route>
+
         </div>
       </Switch>
     <Footer/>
