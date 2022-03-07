@@ -15,3 +15,6 @@
 .textos{
     color: #fff;
 }
+.textos a{
+    text-decoration:none;
+}

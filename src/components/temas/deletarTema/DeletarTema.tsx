@@ -4,6 +4,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import { buscaId, deleteId } from '../../../services/Services';
 import Tema from '../../../models/Tema';
+import { toast } from 'react-toastify';
 import './DeletarTema.css';
 
 
@@ -15,7 +16,16 @@ function DeletarTema() {
 
     useEffect(() => {
         if (token == "") {
-            alert("Para acessar, faça login.")
+          toast.error("Para acessar, faça login.", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+            });
             history.push("/login")
 
         }
@@ -42,7 +52,16 @@ function DeletarTema() {
                 'Authorization': token
               }
             });
-            alert('Tema deletado com sucesso!');
+            toast.success('Tema deletado com sucesso!', {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: "colored",
+              progress: undefined,
+              });
           }
 
           function nao() {

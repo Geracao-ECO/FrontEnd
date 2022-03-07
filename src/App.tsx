@@ -12,10 +12,14 @@ import Ods from './paginas/ods/Ods';
 import ListaTema from './components/temas/listatema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/cadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
     <Router>
+        <ToastContainer />
       <Navbar />
       <Switch>
 
