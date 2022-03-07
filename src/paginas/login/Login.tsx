@@ -49,7 +49,7 @@ function Login(){
                         value={userLogin.usuario}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                         id="usuario"
-                        label="usuário"
+                        label="Usuário"
                         variant="outlined"
                         name="usuario"
                         margin="normal"
@@ -60,7 +60,7 @@ function Login(){
                         value={userLogin.senha}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                         id="senha"
-                        label="senha"
+                        label="Senha"
                         variant="outlined"
                         name="senha"
                         margin="normal"
