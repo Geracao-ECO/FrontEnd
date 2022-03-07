@@ -5,6 +5,7 @@ import './ListaTema.css';
 import { busca } from '../../../services/Services';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../models/Tema';
+import { toast } from 'react-toastify';
 
 function ListaTema() {
 
@@ -14,7 +15,16 @@ function ListaTema() {
 
   useEffect(() => {
     if (token == "") {
-      alert("Para acessar, faça login.")
+      toast.error("Para acessar, faça login.", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "colored",
+        progress: undefined,
+        });
       history.push("/login")
     }
   }, [token])
