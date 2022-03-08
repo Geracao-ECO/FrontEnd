@@ -12,14 +12,17 @@ import Ods from './paginas/ods/Ods';
 import ListaTema from './components/temas/listatema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/cadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import {ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
+import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 
 
 function App() {
   return (
     <Router>
-        <ToastContainer />
+      <ToastContainer />
       <Navbar />
       <Switch>
 
@@ -68,6 +71,20 @@ function App() {
 
           <Route path='/deletarTema/:id'>
             <DeletarTema />
+          </Route>
+
+          <Route path='/posts'>
+            <ListaPostagem />
+          </Route>
+
+          <Route exact path='/formularioPostagem'>
+            <CadastroPost />
+          </Route>
+          <Route exact path='/formularioPostagem/:id'>
+            <CadastroPost />
+          </Route>
+          <Route path='/deletarPostagem/:id'>
+            <DeletarPostagem />
           </Route>
 
         </div>
