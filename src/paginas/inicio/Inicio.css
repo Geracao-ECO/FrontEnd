@@ -34,3 +34,7 @@
         background-size: cover; 
         background-position: right;
 }
+
+.text-decorator-none{
+    text-decoration: none;
+}

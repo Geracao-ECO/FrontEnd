@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Box, Typography, Button } from '@material-ui/core';
 import './Inicio.css';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import { Link, useHistory } from 'react-router-dom';
 
 function Inicio() {
     return (
@@ -15,7 +16,10 @@ function Inicio() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
+                        
+                        <Link to="/posts" className="text-decorator-none">
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                     </Grid>
                 <Grid item xs={6} className="imgInicio">
