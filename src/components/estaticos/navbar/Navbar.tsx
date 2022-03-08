@@ -14,7 +14,7 @@ function Navbar() {
                         </Typography>
                     </Box>
 
-                    <Link to='/' className='text-decorator-none'>
+                    <Link to='/inicio' className='text-decorator-none'>
                         <Box mx={4} className='cursor'>
                             <Typography variant="h6" color="inherit"  >
                                 Início
