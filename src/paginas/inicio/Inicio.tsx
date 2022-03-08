@@ -1,6 +1,7 @@
 import React from 'react';
-import { Grid, Box, Typography } from '@material-ui/core';
+import { Grid, Box, Typography, Button } from '@material-ui/core';
 import './Inicio.css';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 function Inicio() {
     return (
@@ -9,6 +10,12 @@ function Inicio() {
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                     <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo1'><p>Seja bem-vinde!</p></Typography>
+                    </Box>
+                    <Box display="flex" justifyContent="center">
+                        <Box marginRight={1}>
+                            <ModalPostagem />
+                        </Box>
+                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
                     </Box>
                     </Grid>
                 <Grid item xs={6} className="imgInicio">

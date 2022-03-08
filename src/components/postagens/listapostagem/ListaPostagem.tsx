@@ -70,7 +70,7 @@ function ListaPostagem() {
                                         </Box>
                                     </Link>
 
-                                    <Link to={"/deletarPostagm/${post.id}"} className="text-decorator-none">
+                                    <Link to={"/deletarPostagem/${post.id}"} className="text-decorator-none">
                                         <Box mx={1}>
                                             <Button variant="contained" size="small" color="secondary">
                                                 deletar
