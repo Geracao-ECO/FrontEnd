@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Grid, Box, Typography, Button } from '@material-ui/core';
-import './Inicio.css';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import { Link, useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../store/tokens/tokensReducers';
+
+import './Inicio.css';
 
 function Inicio() {
+    
+    let history = useHistory();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
+    
+    useEffect(() => {
+      if (token == "") {
+          alert("Você precisa estar logado")
+          history.push("/login")
+  
+      }
+  }, [token])
     return (
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa1'>
