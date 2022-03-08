@@ -51,9 +51,18 @@ function ListaPostagem() {
                                 <Typography color="textSecondary" gutterBottom>
                                     Postagens
                                 </Typography>
-                                <Typography variant="h5" component="h2">
+                                <Typography variant="h4" component="h2">
                                     {post.titulo}
                                 </Typography>
+                                <Typography variant="h6" component="h2">
+                                    {post.texto}
+                                </Typography>
+                                <Typography variant="h6" component="h2">
+                                    {post.imagem}
+                                </Typography>
+                                <Typography variant="h6" component="h2">
+                                    {post.regiao}
+                                </Typography>                                                             
                                 <Typography variant="body2" component="p">
                                     {post.tema?.descricao}
                                 </Typography>

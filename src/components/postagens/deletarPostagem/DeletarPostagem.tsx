@@ -37,7 +37,7 @@ function DeletarPostagem() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId("/postagem/${id}", setPosts, {
+        buscaId(`/postagem/${id}`, setPosts, {
             headers: {
                 "Authorization": token
             }
@@ -46,7 +46,7 @@ function DeletarPostagem() {
 
     function sim() {
         history.push("/posts")
-        deleteId("/postagem/${id}", {
+        deleteId(`/postagem/${id}`, {
             headers: {
                 "Authorization": token
             }
@@ -73,6 +73,9 @@ function DeletarPostagem() {
                 <Card variant="outlined">
                     <CardContent>
                         <Box justifyContent="center">
+                        <Typography color="textSecondary" gutterBottom>
+                          Deseja deletar a Postagem:
+                         </Typography>
                             <Typography color="textSecondary">
                                 {post?.titulo}
                             </Typography>
