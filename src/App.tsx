@@ -1,5 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import {Provider} from 'react-redux';
+import store from './store/store';
+
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
 import Sobre from './paginas/sobre/Sobre';
@@ -11,13 +15,11 @@ import Ods from './paginas/ods/Ods';
 import ListaTema from './components/temas/listatema/ListaTema';
 import CadastroTema from './components/temas/cadastroTema/cadastroTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
-import {Provider} from 'react-redux';
-import store from './store/store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './App.css';
 
