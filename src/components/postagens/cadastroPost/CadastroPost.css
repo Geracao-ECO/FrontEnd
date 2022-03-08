@@ -1,3 +1,12 @@
 .topo{
     margin-top: 20px;
 }
+
+.botaoCadastro{
+
+    border-color: #ffff !important;
+    background-color: #0f5e9c !important;
+    color: #ffff !important;
+    border-radius: 15px 50px 30px !important;
+   align-items: center;
+}

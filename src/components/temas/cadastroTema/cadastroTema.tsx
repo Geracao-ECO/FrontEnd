@@ -111,8 +111,8 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={tema.tipo_assistencia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipo_assistencia" label="Tipo Assistencia" variant="outlined" name="tipo_assistencia" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary" className="botao">
+                <TextField value={tema.tipo_assistencia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipo_assistencia" label="Tipo Assistencia" variant="outlined" name="tipo_assistencia" margin="normal" fullWidth /><br></br>
+                <Button type="submit" variant="contained" className="botaoTema">
                     Finalizar
                 </Button>
             </form>

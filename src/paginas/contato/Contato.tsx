@@ -24,7 +24,7 @@ function Contato() {
  
                         <Box marginTop={1} textAlign='center'>
                             <Link to= '/contato' className= 'text-decorator-none'>
-                                <Button type='submit' variant='contained' color='primary'>
+                                <Button type='submit' variant='contained' color='primary' className="botaoContato">
                                     enviar
                                 </Button>
                             </Link>

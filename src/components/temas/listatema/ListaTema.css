@@ -1,3 +1,13 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.botaoDeletar{
+
+    border-color: #ffff !important;
+    background-color: #FF0000 !important;
+    color: #ffff !important;
+    border-radius: 15px 50px 30px !important;
+   align-items: center;
+   text-decoration: none;
+}

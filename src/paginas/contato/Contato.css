@@ -14,3 +14,11 @@
     background-size: contain; 
     background-position: center;
 }
+
+.botaoContato{
+
+    border-color: #ffff !important;
+    background-color: #1a0c66 !important;
+    color: #ffff !important;
+    border-radius: 15px 50px 30px !important;
+}

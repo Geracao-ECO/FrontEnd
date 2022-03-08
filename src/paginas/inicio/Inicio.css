@@ -9,11 +9,12 @@
     
 }
 
-.botaoPost{
+.botaoInicio{
 
     border-color: #ffff !important;
-    background-color: #1a0c66 !important;
+    background-color: #0f5e9c !important;
     color: #ffff !important;
+    border-radius: 15px 50px 30px !important;
 }
 
 .sobre3{
@@ -27,7 +28,7 @@
 }
 
 .imgInicio{
-        background-image: url('../../../public/Imagens/imgInicio.png');
+        background-image: url('../../../public/Imagens/imgInicio.gif');
         background-repeat: no-repeat; 
         width: 100vh;
         min-height: 100vh; 
