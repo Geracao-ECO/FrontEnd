@@ -15,9 +15,9 @@ function Login(){
     const [token, setToken] = useState('');
     const[userLogin, setUserLogin] = useState<UserLogin>({
         id: 0,
-        usuario: "",
-        senha: "",
-        token: ""
+        usuario: '',
+        senha: '',
+        token: ''
     })
 
     function updateModel(e: ChangeEvent<HTMLInputElement>){
@@ -27,9 +27,9 @@ function Login(){
         })
     }
         useEffect(() => {
-            if(token != ""){
+            if(token != ''){
                 dispatch(addToken(token));
-                history.push ("/inicio")
+                history.push ('/inicio')
             }
         }, [token])
 
