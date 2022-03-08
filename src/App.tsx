@@ -73,7 +73,7 @@ function App() {
             <DeletarTema />
           </Route>
 
-          <Route path='/posts'>
+          <Route path='/posts'> 
             <ListaPostagem />
           </Route>
 
@@ -83,6 +83,7 @@ function App() {
           <Route exact path='/formularioPostagem/:id'>
             <CadastroPost />
           </Route>
+
           <Route path='/deletarPostagem/:id'>
             <DeletarPostagem />
           </Route>
