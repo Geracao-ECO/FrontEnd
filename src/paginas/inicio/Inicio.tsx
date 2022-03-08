@@ -15,7 +15,7 @@ function Inicio() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Button variant="outlined" className='botao1'>Ver Postagens</Button>
                     </Box>
                     </Grid>
                 <Grid item xs={6} className="imgInicio">
