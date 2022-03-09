@@ -13,7 +13,7 @@ import { SelectChangeEvent } from '@mui/material';
 function CadastroTema() {
     let history = useHistory();
     const { id } = useParams<{id: string}>();
-    const [options, setOptions]  = useState<string[]>(["ONG", "COMUNIDADE"])
+    const [options, setOptions]  = useState<string[]>(["ONG", "Membro da Comunidade"])
     const [item, setItem] = useState<string>("")
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -120,7 +120,7 @@ function CadastroTema() {
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Usuário</InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Tipo de postagem</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
@@ -134,7 +134,7 @@ function CadastroTema() {
                             
                                 
                     </Select>
-                    <FormHelperText>Escolha a opção de usuário </FormHelperText>
+                    <FormHelperText>Escolha o tipo da postagem </FormHelperText>
                     <Button type="submit" variant="contained" className="botaoFinalizar">
                         Finalizar
                     </Button>
