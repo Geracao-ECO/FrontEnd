@@ -24,7 +24,7 @@ function Navbar() {
 
     if(token != ""){
         navbarComponent = <AppBar position="static">
-                <Toolbar variant="dense" style={{ backgroundColor: "	#0f5e9c" }}>
+        <Toolbar variant="dense" className='nave'>
                     <Box style={{ cursor: "pointer" }}>
                         <Typography variant="h3" color="inherit">
                             Geração Eco
