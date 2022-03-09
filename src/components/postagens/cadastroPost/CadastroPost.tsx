@@ -14,6 +14,8 @@ function CadastroPost() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
+    const [options, setOptions]  = useState<string[]>(["Zona sul", "Zona norte", "Zona oeste", "Zona leste", "Zona central"])
+    const [item, setItem] = useState<string>("")
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
       );
@@ -86,7 +88,8 @@ function CadastroPost() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            tema: tema,
+            regiao: item
         })
 
     }
@@ -131,6 +134,10 @@ function CadastroPost() {
 
     }
 
+    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
+        setItem(event.target.value as string);
+      };
+
     function back() {
         history.push('/posts')
     }
@@ -142,8 +149,21 @@ function CadastroPost() {
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
                 <TextField value={postagem.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="imagem" label="imagem" name="imagem" variant="outlined" margin="normal" fullWidth />
-                <TextField value={postagem.regiao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="regiao" label="regiao" name="regiao" variant="outlined" margin="normal" fullWidth />
+                <FormControl >
+                    <InputLabel id="demo-simple-select-helper-label">Região</InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        onChange={handleChange}>
 
+                        {
+                            options.map(option => (
+                                <MenuItem key={ option } value={ option }>{ option }</MenuItem>
+                            ))
+                        }                            
+                                
+                    </Select>
+                    </FormControl><br></br>
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
                     <Select
