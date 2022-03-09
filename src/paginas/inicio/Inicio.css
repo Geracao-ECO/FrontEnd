@@ -1,11 +1,12 @@
 .caixa1{
-    background-color:  #daedfe ;
-    
+    background-color:  #ffff ;  
 }
 
 .titulo1{
 
-    color: #1a0c66!important;
+    color: #0f5e9c!important;
+    font-weight: bold !important;
+    justify-items: center !important;
     
 }
 
@@ -18,10 +19,6 @@
     text-decoration: none !important;
 }
 
-.sobre3{
-    background-color:#ffff;
-}
-
 .descricao1{
 
     color: #4d498f!important;
@@ -32,9 +29,10 @@
         background-image: url('../../../public/Imagens/imgInicio.gif');
         background-repeat: no-repeat; 
         width: 100vh;
-        min-height: 100vh; 
+        min-height: 65vh; 
         background-size: cover; 
-        background-position: right;
+        background-position: center;
+        justify-items: flex-start;
 }
 
 .text-decorator-none{
