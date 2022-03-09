@@ -29,11 +29,11 @@ function Inicio() {
                 </Grid>
 
                 <Grid alignItems="center" item xs={12}>
-                    <Box paddingX={20} >
+                    <Box paddingX={20}>
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo1'><p>Seja bem-vinde!</p></Typography>
                     </Box>
                     <Box display="flex" justifyContent="center" >
-                        <Box marginRight={1} >
+                        <Box>
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="text-decorator-none">
