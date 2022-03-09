@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducers';
 import './cadastroTema.css';
-import { SelectChangeEvent } from '@mui/material';
 
 
 function CadastroTema() {
@@ -24,6 +23,13 @@ function CadastroTema() {
         tipo_assistencia: ''
     })
 
+    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
+        const op = event.target.value
+        console.log(op)
+        setItem(op as string);
+        
+      };
+      
     useEffect(() => {
         if (token == "") {
             toast.error('Para acessar, faça login.', {
@@ -54,14 +60,7 @@ function CadastroTema() {
         })
     }
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
-        const op = event.target.value
-        console.log(op)
-        setItem(op as string);
-        
-      };
-
-    function updatedTema(e: ChangeEvent<HTMLInputElement>) {
+        function updatedTema(e: ChangeEvent<HTMLInputElement>) {
         console.log(item)
 
         setTema({
