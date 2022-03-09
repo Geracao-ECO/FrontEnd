@@ -11,25 +11,25 @@ function Ods() {
                     <Typography variant="h2" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'><p>Água potável e saneamento</p></Typography>
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h6" align="center" className='descricao'>
 
-                    Objetivo 6. Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos<br></br><br></br>
+                    <b> Objetivo 6.</b> Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos<br></br><br></br>
 
-6.1 Até 2030, alcançar o acesso universal e equitativo a água potável e segura para todos<br></br><br></br>
+<b>6.1</b> Até 2030, alcançar o acesso universal e equitativo a água potável e segura para todos<br></br><br></br>
 
-6.2 Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e meninas e daqueles em situação de vulnerabilidade<br></br><br></br>
+<b>6.2</b> Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e meninas e daqueles em situação de vulnerabilidade<br></br><br></br>
 
-6.3 Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura globalmente<br></br><br></br>
+<b>6.3</b> Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura globalmente<br></br><br></br>
 
-6.4 Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e reduzir substancialmente o número de pessoas que sofrem com a escassez de água<br></br><br></br>
+<b>6.4</b> Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e reduzir substancialmente o número de pessoas que sofrem com a escassez de água<br></br><br></br>
 
-6.5 Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis, inclusive via cooperação transfronteiriça, conforme apropriado<br></br><br></br>
+<b>6.5</b> Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis, inclusive via cooperação transfronteiriça, conforme apropriado<br></br><br></br>
 
-6.6 Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo montanhas, florestas, zonas úmidas, rios, aquíferos e lagos<br></br><br></br>
+<b>6.6</b> Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo montanhas, florestas, zonas úmidas, rios, aquíferos e lagos<br></br><br></br>
 
-6.a Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as tecnologias de reuso<br></br><br></br>
+<b>6.a</b> Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as tecnologias de reuso<br></br><br></br>
 
-6.b Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento<br></br><br></br>
+<b>6.b</b> Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento<br></br><br></br>
 
-<a href="https://brasil.un.org/pt-br/sdgs" target="_blank">Os Objetivos de Desenvolvimento Sustentável no Brasil</a><br></br>
+<a href="https://brasil.un.org/pt-br/sdgs" target="_blank"><b>Os Objetivos de Desenvolvimento Sustentável no Brasil</b></a><br></br>
 Os Objetivos de Desenvolvimento Sustentável são um apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade. Estes são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a Agenda 2030 no Brasil.<br></br><br></br>
 
                     </Typography>

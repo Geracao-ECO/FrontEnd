@@ -72,23 +72,25 @@ function Login(){
                         value={userLogin.usuario}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                         id="usuario"
-                        label="Usuário"
+                        label="Insira o e-mail cadastrado"
                         variant="outlined"
                         name="usuario"
                         margin="normal"
                         fullWidth
+                        required
                         />
 
                         <TextField
                         value={userLogin.senha}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                         id="senha"
-                        label="Senha"
+                        label="Insira a senha cadastrada"
                         variant="outlined"
                         name="senha"
                         margin="normal"
                         type="password"
                         fullWidth
+                        required
                         />
 
                         <Box marginTop={2} textAlign="center">

@@ -61,7 +61,7 @@ function ListaPostagem() {
                                     {post.texto}
                                 </Typography>
                                 <Typography variant="h6" component="h2">
-                                    {post.imagem}
+                                    <img src={ post.imagem || "url" } alt="Imagem da postagem"></img>
                                 </Typography>
                                 <Typography variant="h6" component="h2">
                                     {post.regiao}

@@ -29,4 +29,5 @@
     min-height: 100vh; 
     background-size: contain; 
     background-position: center;
+    border-radius: 300px 300px 300px 300px !important;
 }
