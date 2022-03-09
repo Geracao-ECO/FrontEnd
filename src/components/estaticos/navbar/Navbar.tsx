@@ -80,7 +80,7 @@ function Navbar() {
                     </Link>
 
                     <Link to='/login' className='text-decorator-none'>
-                        <Box mx={4} className='cursor'>
+                        <Box mx={4} className='cursor' onClick={goLogout}>
                             <Typography variant="h6" color="inherit"  >
                                 Logout
                             </Typography>
