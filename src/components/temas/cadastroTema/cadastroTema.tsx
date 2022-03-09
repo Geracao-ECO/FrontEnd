@@ -7,11 +7,14 @@ import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducers';
 import './cadastroTema.css';
+import { SelectChangeEvent } from '@mui/material';
 
 
 function CadastroTema() {
     let history = useHistory();
     const { id } = useParams<{id: string}>();
+    const [options, setOptions]  = useState<string[]>(["ONG", "COMUNIDADE"])
+    const [item, setItem] = useState<string>("")
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
       );
@@ -55,6 +58,7 @@ function CadastroTema() {
 
             setTema({
                 ...tema,
+                tipo_assistencia: item,
                 [e.target.name]: e.target.value,
             })
 
@@ -106,19 +110,29 @@ function CadastroTema() {
             history.push('/tema')
         }
 
+        const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
+            setItem(event.target.value as string);
+          };
+        
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
                 <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Usuário </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label">Usuário</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                     >
-                                <MenuItem value={10}>ONG</MenuItem>
-                                <MenuItem value={20}>COMUNIDADE</MenuItem>
+                        onChange={handleChange}>
+
+                        {
+                            options.map(option => (
+                                <MenuItem key={ option } value={ option }>{ option }</MenuItem>
+                            ))
+                        }
+                            
+                                
                     </Select>
                     <FormHelperText>Escolha a opção de usuário </FormHelperText>
                     <Button type="submit" variant="contained" className="botaoFinalizar">
