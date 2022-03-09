@@ -3,7 +3,8 @@
      height: 120px; 
 }
 .box2{
-    background: linear-gradient( 36deg,#134280 8%, #2684FF , #73B0FF)
+    background: linear-gradient( 36deg,#134280 8%, #2684FF , #73B0FF);
+    height: 60px; 
 }
 .redes{
 
