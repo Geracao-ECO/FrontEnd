@@ -1,5 +1,5 @@
 import React, {useState, useEffect, ChangeEvent} from 'react'
-import { Container, Typography, TextField, Button } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import {useHistory, useParams } from 'react-router-dom'
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Services';
@@ -111,11 +111,21 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <TextField value={tema.tipo_assistencia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipo_assistencia" label="Tipo Assistencia" variant="outlined" name="tipo_assistencia" margin="normal" fullWidth /><br></br>
-                <Button type="submit" variant="contained" className="botaoTema">
-                    Finalizar
-                </Button>
-            </form>
+                <FormControl >
+                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                     >
+                                <MenuItem value={10}>ONG</MenuItem>
+                                <MenuItem value={20}>COMUNIDADE</MenuItem>
+                    </Select>
+                    <FormHelperText>Escolha aa opção de usuário </FormHelperText>
+                    <Button type="submit" variant="contained" className="botaoFinalizar">
+                        Finalizar
+                    </Button>
+                </FormControl>
+                </form>
         </Container>
     )
 }
