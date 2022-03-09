@@ -1,27 +1,6 @@
-.caixa{
-    background-color:  #daedfe ;
-    
-}
-
-.titulo{
-    color: #1a0c66!important;
-    font-size: 30px;
-    align-items: center;
-
-}
-
-.botao{
-
-    border-color: #ffff !important;
-    background-color: #a30363;
-    color: #ffff !important;
-    border-radius: 15px 50px 30px !important;
-}
-
-.descricao{
-
-    color: #4d498f!important;
-    font-size: 10px ;
+.titulosobre{
+    color: #004aad !important;
+    font-weight: bold !important;
 }
 
 .sobre{
@@ -31,4 +10,12 @@
     min-height: 100vh; 
     background-size: contain; 
     background-position: center;
+}
+
+
+.icons{
+    color: #004aad;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0px 6px;
 }
