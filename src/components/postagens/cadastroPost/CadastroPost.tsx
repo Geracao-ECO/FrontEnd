@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { ChangeEvent, useEffect, useState } from 'react'
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormHelperText } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
@@ -14,11 +14,9 @@ function CadastroPost() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
-    const [options, setOptions]  = useState<string[]>(["Zona sul", "Zona norte", "Zona oeste", "Zona leste", "Zona central"])
-    const [item, setItem] = useState<string>("")
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    );
 
     useEffect(() => {
         if (token == "") {
@@ -44,7 +42,7 @@ function CadastroPost() {
             tipo_assistencia: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
-       
+
         id: 0,
         titulo: '',
         texto: '',
@@ -53,7 +51,7 @@ function CadastroPost() {
         tema: null
     })
 
-    useEffect(() => { 
+    useEffect(() => {
         setPostagem({
             ...postagem,
             tema: tema
@@ -88,8 +86,7 @@ function CadastroPost() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema,
-            regiao: item
+            tema: tema
         })
 
     }
@@ -134,10 +131,6 @@ function CadastroPost() {
 
     }
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
-        setItem(event.target.value as string);
-      };
-
     function back() {
         history.push('/posts')
     }
@@ -146,45 +139,31 @@ function CadastroPost() {
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" className="textonovapost">Cadastre ou atualize uma nova postagem</Typography>
-                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" variant="outlined" name="titulo" margin="normal" fullWidth />
-                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" variant="outlined" margin="normal" fullWidth />
-                <TextField value={postagem.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="imagem" label="Imagem" name="imagem" variant="outlined" margin="normal" fullWidth />
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Região</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        onChange={handleChange}>
+                <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Título" variant="outlined" name="titulo" margin="normal" placeholder="Insira o título da postagem" required fullWidth />
+                <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" name="texto" variant="outlined" margin="normal" placeholder="Insira o texto da postagem" required fullWidth />
+                <TextField value={postagem.imagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="imagem" label="Imagem" name="imagem" variant="outlined" margin="normal" placeholder="Insira a URL de uma foto para a postagem (Opcional)" fullWidth />
+                <TextField value={postagem.regiao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="regiao" label="Região" name="regiao" variant="outlined" margin="normal" placeholder="Insira a região do ocorrido" required fullWidth />
 
-                        {
-                            options.map(option => (
-                                <MenuItem key={ option } value={ option }>{ option }</MenuItem>
-                            ))
-                        }                            
-                                
-                    </Select>
-                    </FormControl><br></br>
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
-                    <Select
-                        labelId="demo-simple-select-helper-label"
-                        id="demo-simple-select-helper"
-                        onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
-                            headers: {
-                                'Authorization': token
-                            }
-                        })}>
-                        {
-                            temas.map(tema => (
-                                <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
-                            ))
+                <InputLabel id="demo-simple-select-helper-label" >Tema </InputLabel>
+                <Select
+                    labelId="demo-simple-select-helper-label"
+                    id="demo-simple-select-helper"
+                    onChange={(e) => buscaId(`/tema/${e.target.value}`, setTema, {
+                        headers: {
+                            'Authorization': token
                         }
-                    </Select>
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" className="botaofinalizarpost">
-                        Finalizar
-                    </Button>
-                </FormControl>
+                    })}
+                    required fullWidth>
+                    {
+                        temas.map(tema => (
+                            <MenuItem value={tema.id}>{tema.descricao}</MenuItem>
+                        ))
+                    }
+                </Select>
+                <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+                <Button type="submit" variant="contained" className="botaofinalizarpost">
+                    Finalizar
+                </Button>
             </form>
         </Container>
     )

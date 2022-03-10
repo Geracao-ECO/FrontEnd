@@ -1,19 +1,17 @@
-import React, { useState, useEffect, ChangeEvent } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { useState, useEffect, ChangeEvent } from 'react'
+import { Container, Typography, TextField, Button } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom'
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Services';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducers';
-import { SelectChangeEvent } from '@mui/material';
 import './cadastroTema.css';
 
 
 function CadastroTema() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
-    const [options, setOptions] = useState<string[]>(["ONG", "Membro da Comunidade"])
     const [item, setItem] = useState<string>("")
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
@@ -54,19 +52,10 @@ function CadastroTema() {
         })
     }
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
-        const op = event.target.value
-        console.log(op)
-        setItem(op as string);
-        
-      };
 
     function updatedTema(e: ChangeEvent<HTMLInputElement>) {
-        console.log(item)
-
         setTema({
             ...tema,
-            tipo_assistencia: item,
             [e.target.name]: e.target.value
         })
 
@@ -122,25 +111,11 @@ function CadastroTema() {
         <Container maxWidth="sm" className="fundocaixa">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" className="cadastrotema">Cadastre ou atualize um novo tema</Typography>
-                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <FormControl >
-                    <InputLabel id="demo-simple-select-helper-label">Tipo de postagem</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        onChange={handleChange}
-                        value={item}
-                    >
-                        <MenuItem value="ONG">ONG</MenuItem>
-                        <MenuItem value="Membro">Membro</MenuItem>
-
-
-                    </Select>
-                    <FormHelperText>Escolha o tipo da postagem </FormHelperText>
-                    <Button type="submit" variant="contained" className="btFinalizar">
-                        Finalizar
-                    </Button>
-                </FormControl>
+                <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Nome do tema" variant="outlined" name="descricao" margin="normal" placeholder="Insira um nome para o novo tema" fullWidth required />
+                <TextField value={tema.tipo_assistencia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipo_assistencia" label="Tipo de assistência" variant="outlined" name="tipo_assistencia" margin="normal" placeholder="Informe se é ONG ou Membro da Comunidade" fullWidth required />
+                <Button type="submit" variant="contained" className="btFinalizar">
+                    Finalizar
+                </Button>
             </form>
         </Container>
     )

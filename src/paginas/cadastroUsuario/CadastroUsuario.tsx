@@ -1,7 +1,7 @@
-import React , {useState, useEffect, ChangeEvent } from 'react';
+import {useState, useEffect, ChangeEvent } from 'react';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Services';
-import { Grid, Box, Typography, Button, TextField, FormControl, FormHelperText, InputLabel, MenuItem, Select } from '@material-ui/core';
+import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import './CadastroUsuario.css';
@@ -10,8 +10,7 @@ function CadastroUsuario() {
 
     let history = useHistory();
     const [confirmarSenha,setConfirmarSenha] = useState<String>("")
-    const [options, setOptions]  = useState<string[]>(["ONG", "Membro da Comunidade"])
-    const [item, setItem] = useState<string>("")
+    
     
     const [user, setUser] = useState<User>(
         {
@@ -50,8 +49,7 @@ function CadastroUsuario() {
 
              setUser({
             ...user,
-            tipo_usuario: item,
-            [e.target.name]: e.target.value,
+            [e.target.name]: e.target.value
         })
 
     }
@@ -85,10 +83,7 @@ function CadastroUsuario() {
         }
     }
 
-    const handleChange = (event: React.ChangeEvent<{ value: unknown}>) => {
-        setItem(event.target.value as string);
-      };
-    
+      
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' >
             <Grid item xs={6} className='imagem'></Grid>
@@ -101,24 +96,8 @@ function CadastroUsuario() {
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth placeholder="Insira no mínimo 8 caracteres" required />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}id='confirmarSenha' label='Confirmar senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth placeholder="Insira no mínimo 8 caracteres" required />
                         <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='foto' label='Foto' variant='outlined' name='foto' margin='normal' placeholder="Insira o URL da foto (Opcional)" fullWidth />
-                        
-                        <FormControl required>
-                    <InputLabel id="demo-simple-select-helper-label">Tipo de usuário</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        onChange={handleChange}
-                        >
+                        <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}id='tipo_usuario' label='Tipo de usuário' variant='outlined' name='tipo_usuario' margin='normal' placeholder="Insira o tipo de usuário (ONG ou Membro da comunidade)" required fullWidth />
 
-                        {
-                            options.map(option => (
-                                <MenuItem key={ option } value={ option }>{ option }</MenuItem>
-                            ))
-                        }
-                            
-                                
-                    </Select>
-                    <FormHelperText>Escolha o tipo de perfil de usuário </FormHelperText>
 
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
@@ -130,7 +109,6 @@ function CadastroUsuario() {
                                     Cadastrar
                             </Button>
                         </Box>
-                        </FormControl>
                     </form>
                 </Box>
             </Grid>
