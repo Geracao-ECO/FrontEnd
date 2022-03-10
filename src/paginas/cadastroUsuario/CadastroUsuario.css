@@ -1,5 +1,6 @@
-.textos1{
+.text2{
     font-weight: bold !important;
+    color: #004aad !important;
  }
 
 .imagem{
@@ -10,11 +11,12 @@
     background-size: cover;
     background-position: center;
 }
+
 .text-decorator-none{
     text-decoration: none;
 }
-.btnCancelar{
 
+.btnCancelar{
         border-color: #ffff !important;
         background-color: #FF0000 !important;
         color: #ffff !important;
@@ -24,7 +26,6 @@
     }
 
 .botaoCadastro{
-
     border-color: #ffff !important;
     background-color: #004aad !important;
     color: #ffff !important;
