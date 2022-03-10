@@ -3,6 +3,7 @@
 }
 
 .titulo1{
+    font-family:Fonte !important;
     color: #004aad!important;
     font-weight: bold !important;
     justify-items: center !important;
@@ -33,4 +34,8 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+@font-face {
+    font-family:'Fonte' ;
+    src: url(../../../public/regurgi.ttf);
 }
