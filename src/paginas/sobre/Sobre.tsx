@@ -144,7 +144,7 @@ function Sobre() {
                             </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/Kacianyd" target="blank">
+                            <a href="https://github.com/Kaciany" target="blank">
                                 <GitHubIcon className="icons" />
                             </a>
                             <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" target="blank">
