@@ -61,7 +61,7 @@ function Sobre() {
             <Grid container direction="row" justifyContent="center" alignItems="center" >
 
                 <Box m={5}>
-                    <Typography variant="h3" align="center" className="titulosobre" >Idealizadores do projeto</Typography>
+                    <Typography variant="h3" align="center" className="titulosobre" >Idealizadores do Projeto</Typography>
                 </Box>
 
 
@@ -115,7 +115,7 @@ function Sobre() {
 
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Jéssica Mendes
+                                Jéssica Dias
                             </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -144,7 +144,7 @@ function Sobre() {
                             </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/Kacianyd" target="blank">
+                            <a href="https://github.com/Kaciany" target="blank">
                                 <GitHubIcon className="icons" />
                             </a>
                             <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" target="blank">
@@ -182,7 +182,7 @@ function Sobre() {
 
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Vinicius Barbosa
+                                Vinícius Barbosa
                             </Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
@@ -194,7 +194,6 @@ function Sobre() {
                             </a>
                         </Box>
                     </Card>
-
                 </Grid>
             </Grid>
         </>

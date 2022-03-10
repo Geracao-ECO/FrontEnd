@@ -16,7 +16,7 @@ function Footer() {
     var footerComponent;
 
     if (token != "") {
-        footerComponent = <Grid container direction="row" spacing={2} className='footer'>
+        footerComponent = <Grid container direction="row" spacing={0} className='footer'>
             <Grid alignItems="center" item xs={3}>
                 <Box display="flex" paddingTop={2} className="imgfooter">
                     <img src='https://i.imgur.com/KkOU0Fk.png' alt="" width="50%" height="auto" />

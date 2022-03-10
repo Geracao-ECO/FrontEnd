@@ -1,6 +1,6 @@
 .footer{
     background: linear-gradient( 36deg,#73B0FF 8%, #2684FF , #004aad);
-    height: 250px; 
+    height: 100%; 
 }
 
 .icon{
@@ -16,5 +16,5 @@
 
 .imgfooter{
     padding-bottom: 20px !important;
-    padding-left: 15px;
+    padding-left: 15px ;
 }
