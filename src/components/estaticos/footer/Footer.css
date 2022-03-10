@@ -1,11 +1,19 @@
 .footer{
     background: linear-gradient( 36deg,#73B0FF 8%, #2684FF , #004aad);
-    height: 100%; 
+    height: 200px; 
 }
 
 .icon{
     font-size: 20px !important;
     color: #fff; 
+    margin: 0 1em;
+    
+}
+.icon2{
+    font-size: 20px !important;
+    color: #fff; 
+    margin: 0 4em;
+    
 }
 
 .textofooter{

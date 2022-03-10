@@ -38,14 +38,14 @@ function Footer() {
                 <Box className='textofooter'>
                     <Typography variant="subtitle2">Entre em contato conosco</Typography>
                     <a href="mailto:projetoodsgeracaoeco@gmail.com" target="_blank">
-                        <EmailIcon className='icon' />
+                        <EmailIcon className='icon2' />
                     </a>
                 </Box>
             </Grid>
             <Grid alignItems="center" item xs={3}>
                 <Box className='textofooter'>
-                    <Typography variant="subtitle2">© 2022 Copyright:</Typography>
-                    <Typography variant="subtitle2"> Geração Eco e Generation Brasil</Typography>
+                <Typography variant="subtitle2"> Geração Eco e Generation Brasil</Typography>
+                    <Typography variant="subtitle2">© 2022 Copyright</Typography>
                 </Box>
             </Grid>
         </Grid>
