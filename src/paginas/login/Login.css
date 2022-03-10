@@ -1,10 +1,11 @@
-.textos3{
-
+.textosLogin{
     font-weight: bold !important;
+    color: #004aad !important;
 }
 
-.text-decorator-none{
-    text-decoration:none;
+.textcadastrese{
+    font-weight: bold !important;
+    color: #004aad !important;
 }
 
 .imagem{
@@ -14,4 +15,13 @@
     min-height: 100vh; 
     background-size: cover; 
     background-position: center;
+}
+
+.botaoLogin{
+    border-color: #ffff !important;
+    background-color: #004aad !important;
+    color: #ffff !important;
+    border-radius: 15px 50px 30px !important;
+   align-items: center;
+   text-decoration: none !important;
 }

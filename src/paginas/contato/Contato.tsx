@@ -23,7 +23,7 @@ function Contato() {
                         <TextField multiline rows={4} variant="outlined" fullWidth/>
  
                         <Box marginTop={1} textAlign='center'>
-                            <Link to= '/contato' className= 'text-decorator-none'>
+                            <Link to= '/contato' className= "text-decorator-none">
                                 <Button type='submit' variant='contained' color='primary' className="botaoContato">
                                     enviar
                                 </Button>
@@ -34,7 +34,7 @@ function Contato() {
             </Grid>
             <Grid item xs={3} className="imgContato" >
             </Grid>
-            <Grid xs={12} style={{ backgroundColor: "red" }}>
+            <Grid xs={12}>
             </Grid>
         </Grid>
 

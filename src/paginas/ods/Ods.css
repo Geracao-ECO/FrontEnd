@@ -1,24 +1,19 @@
 .caixa{
     background-color:  #ffffff ;
-    
 }
 
 .titulo{
-
-    color: #1a0c66!important;
-    
+    color: #004aad!important;
 }
 
 .botao{
-
     border-color: #ffff !important;
     background-color: #a30363;
     color: #ffff !important;
 }
 
 .descricao{
-
-    color: #4d498f!important;
+    color: #004aad!important;
     font-size: 20px;
 }
 
@@ -30,4 +25,10 @@
     background-size: contain; 
     background-position: center;
     border-radius: 300px 300px 300px 300px !important;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-decorator-none{
+    text-decoration: none;
 }
