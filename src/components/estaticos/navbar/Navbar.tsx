@@ -36,7 +36,7 @@ function Navbar() {
         navbarComponent = <AppBar position="static">
             <Toolbar variant="dense" className='nave'>
                 <Box className="geracao">
-                    <Typography variant="h3" color="inherit">
+                    <Typography variant="h3" color="inherit"  className='name'>
                         Geração Eco
                     </Typography>
                 </Box>
