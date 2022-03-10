@@ -1,4 +1,12 @@
-.botaoTema{
+.fundocaixa{
+    background-color: #ffff !important; 
+}
+
+.cadastrotema{
+    color: #004aad !important;
+}
+
+.btFinalizar{
     border-color: #ffff !important;
     background-color: #004aad !important;
     color: #ffff !important;

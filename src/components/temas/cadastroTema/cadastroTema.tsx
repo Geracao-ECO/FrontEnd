@@ -6,8 +6,8 @@ import { buscaId, post, put } from '../../../services/Services';
 import { toast } from 'react-toastify';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducers';
-import './cadastroTema.css';
 import { SelectChangeEvent } from '@mui/material';
+import './cadastroTema.css';
 
 
 function CadastroTema() {
@@ -118,12 +118,10 @@ function CadastroTema() {
         history.push('/tema')
     }
 
-
-
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="fundocaixa">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre um novo tema</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" className="cadastrotema">Cadastre ou atualize um novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Descrição" variant="outlined" name="descricao" margin="normal" fullWidth />
                 <FormControl >
                     <InputLabel id="demo-simple-select-helper-label">Tipo de postagem</InputLabel>
@@ -139,7 +137,7 @@ function CadastroTema() {
 
                     </Select>
                     <FormHelperText>Escolha o tipo da postagem </FormHelperText>
-                    <Button type="submit" variant="contained" className="botaoFinalizar">
+                    <Button type="submit" variant="contained" className="btFinalizar">
                         Finalizar
                     </Button>
                 </FormControl>

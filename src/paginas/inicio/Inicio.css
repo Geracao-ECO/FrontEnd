@@ -3,15 +3,12 @@
 }
 
 .titulo1{
-
     color: #004aad!important;
     font-weight: bold !important;
     justify-items: center !important;
-    
 }
 
 .botaoInicio{
-
     border-color: #ffff !important;
     background-color: #004aad !important;
     color: #ffff !important;
@@ -20,7 +17,6 @@
 }
 
 .descricao1{
-
     color: #004aad!important;
     font-size: 10px ;
 }
