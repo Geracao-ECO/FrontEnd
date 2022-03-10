@@ -1,5 +1,10 @@
 .titulosobre{
-    color: #004aad !important;
+    color: #0f5e9c !important;
+    font-weight: bold !important;
+}
+
+.nomessobre{
+    color: #2684FF !important;
     font-weight: bold !important;
 }
 
@@ -14,8 +19,13 @@
 
 
 .icons{
-    color: #004aad;
-    width: 40px !important;
-    height: 40px !important;
+    color: #2684FF;
+    width: 50px !important;
+    height: 50px !important;
     margin: 0px 6px;
+}
+
+.foto{
+    width: 330px !important;
+    height: 325px !important;
 }
