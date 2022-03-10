@@ -1,20 +1,20 @@
-.box1{
-    background-color: #5abcd8;
-     height: 120px; 
-}
-.box2{
-    background: linear-gradient( 36deg,#134280 8%, #2684FF , #73B0FF);
-    height: 60px; 
-}
-.redes{
-
-    font-size: 60px !important;
-     color: #fff; 
+.footer{
+    background: linear-gradient( 36deg,#73B0FF 8%, #2684FF , #004aad);
+    height: 200px; 
 }
 
-.textos{
+.icon{
+    font-size: 20px !important;
+    color: #fff; 
+}
+
+.textofooter{
     color: #fff;
-}
-.textos a{
     text-decoration:none;
+    margin-top: 60px;
+}
+
+.imgfooter{
+    padding-bottom: 20px !important;
+    padding-left: 15px;
 }
