@@ -1,5 +1,8 @@
 # Geração ECO - Projeto Integrador
 
+Projeto Integrador referente ao bootcamp da Generation da Turma 41.
+**Problema social abordado:** OD6 - Água Potável e Saneamento.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
