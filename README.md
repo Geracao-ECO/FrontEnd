@@ -1,49 +1,45 @@
-# Geração ECO - Projeto Integrador
+# Geração ECO - Projeto Integrador [clique para visitar](geracao-eco.vercel.app/)
 
-Projeto Integrador referente ao bootcamp da Generation da Turma 41.
+![Imgur](https://i.imgur.com/ILX6bf2.png)
+
+Projeto Integrador referente ao bootcamp da Generation - Turma 41.
+
 **Problema social abordado:** OD6 - Água Potável e Saneamento.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Integrantes do Grupo:
+- [Beatriz Santos](https://github.com/BiaSa3s) <a href="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" title="linkedin"><img src="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" width="20"/></a>
+- [Bruna Verrone](https://github.com/verronebruna) <a href="https://www.linkedin.com/in/bruna-verrone/" title="linkedin"><img src="https://www.linkedin.com/in/bruna-verrone/" width="20"/></a>
+- [Jéssica Dias](https://github.com/jessicasmd) <a href="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" title="linkedin"><img src="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" width="20"/></a>
+- [Kaciany Ramos](https://github.com/Kaciany) <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" title="linkedin"><img src="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" width="20"/></a>
+- [Natália Ferreira](https://github.com/nataliahisf) <a href="https://www.linkedin.com/in/natalia--ferreira/" title="linkedin"><img src="https://www.linkedin.com/in/natalia--ferreira/" width="20"/></a>
+- [Vinícius Barbosa](https://github.com/vvvvinicius) <a href="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" title="linkedin"><img src="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" width="20"/></a>
 
-## Available Scripts
+## Sobre o projeto
 
-In the project directory, you can run:
+Geração ECO é uma rede social que busca ampliar a mentalidade de cada morador sobre a poluição urbana, ameaça a saúde pública, perda de produtividade e de renda devido à falta de saneamento básico que acarretam doenças infecciosas.
 
-### `npm start`
+A rede social busca unir membros da comunidade com ONGs que lidam com essa problemática e cobram os órgãos públicos sobre as tratativas. Assim, os membros podem sinalizar problemas que enfrentam em suas regiões, as ONGs encaminham aos órgãos responsáveis e sinalizam todos os usuários da rede sobre o que foi reportado e o que está sendo feito.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Sobre os objetivos de desenvolvimento sustentável da ONU`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Os projetos integradores são realizados baseados em um dos 17 objetivos de desenvolvimento sustentável da ONU, as ODS. Para a turma 41 o objetivo proposto foi o [Objetivo 6 - Água Potável e Saneamento](https://odsbrasil.gov.br/objetivo/objetivo?n=6). O foco principal é o de "Garantir disponibilidade e manejo sustentável da água e saneamento para todos".
 
-### `npm test`
+Cada ODS se divide em submetas para garantir que o objetivo principal seja abordado. Nossa rede social teve como foco a meta _6.b - Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento._
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Partindo dessa necessidade, foi definido o escopo do [Geração ECO](geracao-eco.vercel.app/) .
 
-### `npm run build`
+## Telas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## O projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O projeto foi criado usando MySQL e Spring Boot para o backend e VSCode aplicando redux para o frontend. Pode ser acompanhado pelos seguintes links:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [BackEnd](https://github.com/Geracao-ECO/BackEnd)
+- [FrontEnd](https://github.com/Geracao-ECO/FrontEnd)
+- [Documentação](https://github.com/Geracao-ECO/Documentos)
+### Ferramentas e tecnologias
 
-### `npm run eject`
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="60"/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Implementações futuras
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
