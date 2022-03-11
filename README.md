@@ -1,15 +1,36 @@
-# Geração ECO - Projeto Integrador
+# Geração ECO - Projeto Integrador [clique para visitar](geracao-eco.vercel.app/)
 
-Projeto Integrador referente ao bootcamp da Generation da Turma 41.
+![enter image description here](https://i.imgur.com/D4Dm3r6.gifv)
+
+Projeto Integrador referente ao bootcamp da Generation - Turma 41.
+
 **Problema social abordado:** OD6 - Água Potável e Saneamento.
+
+##Integrantes do Grupo:
+- [Beatriz Santos](https://github.com/BiaSa3s)
+- [Bruna Verrone] (https://github.com/verronebruna)
+- [Jéssica Dias] (https://github.com/jessicasmd)
+- [Kaciany Ramos] (https://github.com/Kaciany)
+- [Natália Ferreira] (https://github.com/nataliahisf)
+- [Vinícius Barbosa] (https://github.com/vvvvinicius) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Sobre o projeto
 
-In the project directory, you can run:
+Geração ECO é uma rede social que busca ampliar a mentalidade de cada morador sobre a poluição urbana, ameaça a saúde pública, perda de produtividade e de renda devido à falta de saneamento básico que acarretam doenças infecciosas.
 
-### `npm start`
+A rede social busca unir membros da comunidade com ONGs que lidam com essa problemática e cobram os órgãos públicos sobre as tratativas. Assim, os membros podem sinalizar problemas que enfrentam em suas regiões, as ONGs encaminham aos órgãos responsáveis e sinalizam todos os usuários da rede sobre o que foi reportado e o que está sendo feito.
+
+### `Sobre os objetivos de desenvolvimento sustentável da ONU`
+
+Os projetos integradores são realizados baseados em um dos 17 objetivos de desenvolvimento sustentável da ONU, as ODS. Para a turma 41 o objetivo proposto foi o [Objetivo 6 - Água Potável e Saneamento](https://odsbrasil.gov.br/objetivo/objetivo?n=6). O foco principal é o de "Garantir disponibilidade e manejo sustentável da água e saneamento para todos".
+
+Cada ODS se divide em submetas para garantir que o objetivo principal seja abordado. Nossa rede social teve como foco a meta _6.b - Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento._
+
+Partindo dessa necessidade, foi definido o escopo do **Geração ECO**.
+
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
