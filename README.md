@@ -1,20 +1,18 @@
 # Geração ECO - Projeto Integrador [clique para visitar](geracao-eco.vercel.app/)
 
-![Imgur](https://imgur.com/ILX6bf2)
+![Imgur](https://i.imgur.com/ILX6bf2.png)
 
 Projeto Integrador referente ao bootcamp da Generation - Turma 41.
 
 **Problema social abordado:** OD6 - Água Potável e Saneamento.
 
-##Integrantes do Grupo:
+## Integrantes do Grupo:
 - [Beatriz Santos](https://github.com/BiaSa3s)
-- [Bruna Verrone] (https://github.com/verronebruna)
-- [Jéssica Dias] (https://github.com/jessicasmd)
-- [Kaciany Ramos] (https://github.com/Kaciany)
-- [Natália Ferreira] (https://github.com/nataliahisf)
-- [Vinícius Barbosa] (https://github.com/vvvvinicius) 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [Bruna Verrone](https://github.com/verronebruna)
+- [Jéssica Dias](https://github.com/jessicasmd)
+- [Kaciany Ramos](https://github.com/Kaciany)
+- [Natália Ferreira](https://github.com/nataliahisf)
+- [Vinícius Barbosa](https://github.com/vvvvinicius) 
 
 ## Sobre o projeto
 
@@ -28,7 +26,15 @@ Os projetos integradores são realizados baseados em um dos 17 objetivos de dese
 
 Cada ODS se divide em submetas para garantir que o objetivo principal seja abordado. Nossa rede social teve como foco a meta _6.b - Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento._
 
-Partindo dessa necessidade, foi definido o escopo do **Geração ECO**.
+Partindo dessa necessidade, foi definido o escopo do [Geração ECO](geracao-eco.vercel.app/) .
+
+## O projeto técnico
+
+- [BackEnd](https://github.com/Geracao-ECO/BackEnd)
+- [FrontEnd](https://github.com/Geracao-ECO/FrontEnd)
+- [Documentação](https://github.com/Geracao-ECO/Documentos)
+
+## Telas
 
 
 
