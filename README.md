@@ -1,6 +1,6 @@
 # Geração ECO - Projeto Integrador [clique para visitar](geracao-eco.vercel.app/)
 
-[Imgur](https://imgur.com/vR5vo1L)
+![Imgur](https://imgur.com/vR5vo1L)
 
 Projeto Integrador referente ao bootcamp da Generation - Turma 41.
 
