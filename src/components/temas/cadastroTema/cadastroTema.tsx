@@ -110,7 +110,7 @@ function CadastroTema() {
     return (
         <Container maxWidth="sm" className="fundocaixa">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" className="cadastrotema">Cadastre tema</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" className="cadastrotema">Tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="Nome do tema" variant="outlined" name="descricao" margin="normal" placeholder="Insira um nome para o novo tema" fullWidth required />
                 <TextField value={tema.tipo_assistencia} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="tipo_assistencia" label="Tipo de assistência" variant="outlined" name="tipo_assistencia" margin="normal" placeholder="Informe se é ONG ou Membro da Comunidade" fullWidth required />
                 <Button type="submit" variant="contained" className="btFinalizar">
