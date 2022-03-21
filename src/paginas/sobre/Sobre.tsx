@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Grid, Box, Typography, Button, Card, CardMedia, CardContent, CardActions } from "@material-ui/core";
+import { Grid, Box, Typography } from "@material-ui/core";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { useHistory } from 'react-router-dom'
@@ -7,7 +7,6 @@ import { toast } from "react-toastify";
 import { useSelector } from 'react-redux';
 import "./Sobre.css"
 import { TokenState } from "../../store/tokens/tokensReducers";
-import { TabContext, TabPanel } from '@material-ui/lab';
 
 function Sobre() {
     let history = useHistory();
@@ -46,154 +45,201 @@ function Sobre() {
                 </Grid>
 
                 <Box m={5}>
-                <Grid item xs={6}>
-                    <img width="400px" height="400px" src="https://imgur.com/CzotpFA.png" alt="" />
-                </Grid>
+                    <Grid item xs={6}>
+                        <img width="400px" height="400px" src="https://imgur.com/CzotpFA.png" alt="" />
+                    </Grid>
                 </Box>
             </Grid>
 
+            <Grid container direction="row" justifyContent="center" alignItems="center">
+                <Grid item md={10} xs={10} >
+                    <Box flexDirection="column" display="flex" justifyContent="center" alignItems="center">
+                        <Typography className="titulosobre" variant="h4" gutterBottom color="textPrimary" component="h4" align="center" >
+                            Idealizadores do Projeto
+                        </Typography>
 
+                        <Box display="flex" justifyContent="space-around" alignItems="center">
 
+                            <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                                            <img className="foto" src="https://avatars.githubusercontent.com/u/95725748?v=4" alt="[foto Beatriz Santos]" />
+                                        </Box>
+                                        <Typography className="nomessobre">
+                                            Beatriz Santos
+                                        </Typography>
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Lorem Ipsum</i> 
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                                        <a href="https://github.com/BiaSa3s" target="_blank" rel="noreferrer">
+                                            <GitHubIcon className="icons" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" target="_blank" rel="noreferrer">
+                                            <LinkedInIcon className="icons" />
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
 
+                            <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                                            <img className="foto" src="https://avatars.githubusercontent.com/u/86629378?v=4" alt="[foto Bruna Verrone]" />
+                                        </Box>
+                                        <Typography className="nomessobre">
+                                            Bruna Verrone
+                                        </Typography>
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Lorem Ipsum</i>
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                                        <a href="https://github.com/verronebruna" target="blank" rel="noreferrer" >
+                                            <GitHubIcon className="icons" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/verronebruna/" target="blank" rel="noreferrer">
+                                            <LinkedInIcon className="icons" />
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
 
+                            <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                                            <img className="foto" src="https://avatars.githubusercontent.com/u/94875485?v=4" alt="[foto Jessica Dias]" />
+                                        </Box>
+                                        <Typography className="nomessobre">
+                                            Jéssica Dias
+                                        </Typography>
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Sou uma pessoa apaixonada por tecnologia e gosto muito de aprender, e tenho como principais
+habilidades trabalho em equipe e proatividade.</i> 
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                                        <a href="https://github.com/jessicasmd" target="blank" rel="noreferrer">
+                                            <GitHubIcon className="icons" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" target="blank" rel="noreferrer">
+                                            <LinkedInIcon className="icons" />
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
+                            </Box>
 
+                            <Box display="flex" justifyContent="space-around">
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" >
+                            <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                                            <img className="foto" src="https://avatars.githubusercontent.com/u/70922914?v=4" alt="foto Kaciany Ramos" />
+                                        </Box>
+                                        <Typography className="nomessobre">
+                                            Kaciany Ramos
+                                        </Typography>
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Lorem Ipsum</i> 
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                                        <a href="https://github.com/Kaciany" target="blank" rel="noreferrer">
+                                            <GitHubIcon className="icons" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" target="blank" rel="noreferrer">
+                                            <LinkedInIcon className="icons" />
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
 
-                <Box m={5}>
-                    <Typography variant="h3" align="center" className="titulosobre" >Idealizadores do Projeto</Typography>
-                </Box>
+                            <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                                            <img className="foto" src="https://avatars.githubusercontent.com/u/95705850?v=4" alt="foto Natália Ferreira" />
+                                        </Box>
+                                        <Typography className="nomessobre">
+                                            Natália Ferreira
+                                        </Typography>
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Lorem Ipsum</i> 
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                                        <a href="https://github.com/nataliahisf" target="blank" rel="noreferrer">
+                                            <GitHubIcon className="icons" />
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/natalia--ferreira/" target="blank" rel="noreferrer">
+                                            <LinkedInIcon className="icons" />
+                                        </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
 
+                    <Grid item md={3} xs={10} >
+                                <Box className='margemSobre' justifyContent='center'>
+                                    <div id="mouse">
+                                        <Box display="flex" justifyContent="center" >
+                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQG09rFIt51OhQ/profile-displayphoto-shrink_200_200/0/1643053749158?e=1652313600&v=beta&t=69QPc0m-zn9oTHI1JL_0BBUpYaGw5LKlavFkE6XTo_w" alt="[foto Vinícius Barbosa]" />
 
-                <Grid container direction="row" justifyContent="center" alignItems="center">
-
-                    <Card>
-                        <img className="foto" src="https://avatars.githubusercontent.com/u/95725748?v=4"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Beatriz Santos
-                            </Typography>
                         </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/BiaSa3s" target="blank">
-                                <GitHubIcon className="icons" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" target="blank">
-                                <LinkedInIcon className="icons" />
-                            </a>
-                        </Box>
-                    </Card>
-
-                    <Box mx={7}></Box>
-
-                    <Card>
-                        <img className="foto" src="https://avatars.githubusercontent.com/u/86629378?v=4"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Bruna Verrone
-                            </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/verronebruna" target="blank">
-                                <GitHubIcon className="icons" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/bruna-verrone/" target="blank">
-                                <LinkedInIcon className="icons" />
-                            </a>
-                        </Box>
-                    </Card>
-
-                    <Box mx={7}></Box>
-
-                    <Card>
-                        <img className="foto" src="https://avatars.githubusercontent.com/u/94875485?v=4"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Jéssica Dias
-                            </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/jessicasmd" target="blank">
-                                <GitHubIcon className="icons" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" target="blank">
-                                <LinkedInIcon className="icons" />
-                            </a>
-                        </Box>
-                    </Card>
-
-                </Grid>
-
-                <Box marginY={30}></Box>
-
-                <Grid container direction="row" justifyContent="center" alignItems="center" >
-
-                    <Card>
-                        <img className="foto" src="https://avatars.githubusercontent.com/u/70922914?v=4"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Kaciany Ramos
-                            </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/Kaciany" target="blank">
-                                <GitHubIcon className="icons" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" target="blank">
-                                <LinkedInIcon className="icons" />
-                            </a>
-                        </Box>
-                    </Card>
-
-                    <Box mx={7}></Box>
-
-                    <Card>
-                        <img className="foto" src="https://avatars.githubusercontent.com/u/95705850?v=4"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
-                                Natália Ferreira
-                            </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/nataliahisf" target="blank">
-                                <GitHubIcon className="icons" />
-                            </a>
-                            <a href="https://www.linkedin.com/in/natalia--ferreira/" target="blank">
-                                <LinkedInIcon className="icons" />
-                            </a>
-                        </Box>
-                    </Card>
-
-                    <Box mx={7}></Box>
-
-                    <Card>
-                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQG09rFIt51OhQ/profile-displayphoto-shrink_200_200/0/1643053749158?e=1652313600&v=beta&t=69QPc0m-zn9oTHI1JL_0BBUpYaGw5LKlavFkE6XTo_w"
-                            alt="" />
-
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h4" component="h3" align="center" className="nomessobre">
+                                        <Typography className="nomessobre">
                                 Vinícius Barbosa
                             </Typography>
-                        </Box>
-                        <Box display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://github.com/vvvvinicius" target="blank">
+                                        <div id="show">
+                                            <Typography className="subtitulo" gutterBottom>
+                                                <i>Sobre mim</i>
+                                            </Typography>
+                                            <Typography className="textoSobre">
+                                                <i>Lorem Ipsum</i> 
+                                            </Typography>
+                                        </div>
+                                    </div>
+                                    <Box display="flex" alignItems="center" justifyContent="center">
+                            <a href="https://github.com/vvvvinicius" target="blank" rel="noreferrer">
                                 <GitHubIcon className="icons" />
                             </a>
-                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" target="blank">
+                            <a href="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" target="blank" rel="noreferrer">
                                 <LinkedInIcon className="icons" />
                             </a>
+                                    </Box>
+                                </Box>
+                            </Grid>
                         </Box>
-                    </Card>
+                    </Box>
                 </Grid>
             </Grid>
         </>

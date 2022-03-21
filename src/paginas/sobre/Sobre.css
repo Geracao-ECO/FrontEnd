@@ -6,6 +6,9 @@
 .nomessobre{
     color: #004aad !important;
     font-weight: bold !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    text-align: center;
 }
 
 .sobre{
@@ -20,12 +23,38 @@
 
 .icons{
     color: #004aad;
-    width: 50px !important;
-    height: 50px !important;
-    margin: 0px 6px;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 20px 0;
 }
 
 .foto{
-    width: 330px !important;
-    height: 325px !important;
+    border-radius: 100%;
+    width: 100%;
 }
+
+.margemSobre{
+    margin: 50px 0;
+}
+
+.subtitulo{
+    font-size: 17px !important;
+    color: #004aad;
+    font-weight: 500 !important;
+    text-align: center;
+    font-weight: bold !important;
+    }
+
+    .textoSobre{
+        font-size: 15px !important;
+        font-weight: 600!important;
+        text-align: center !important;
+        }
+
+        #show{
+            display: none;
+          }
+          
+        #mouse:hover #show{
+            display:block;
+            }
