@@ -224,7 +224,7 @@ habilidades trabalho em equipe e proatividade.</i>
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Olá, sou Vinícius! Uma pessoa com identidade não-binária que usa qualquer pronome (ele, ela, elu).<br></br>
+                                                <i>Uma pessoa com identidade não-binária que usa qualquer pronome (ele, ela, elu).<br></br>
 Já fui Analista de Atendimento Bilíngue Jr e Agente de Suporte, atuei em projetos como implementação de suporte pelo WhatsApp, integração de uma filial da SumUp em São José dos Campos e hoje - além de ser Assistente Especializado III - sou uma pessoa formada em desenvolvimento web Java Fulltack Jr e busco adentrar na área da tecnologia em empresas com diversidade. Adoro ter novas ideias, decisões em time e muitas mão na massa! </i> 
                                             </Typography>
                                         </div>
