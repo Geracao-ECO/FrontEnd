@@ -194,7 +194,7 @@ habilidades trabalho em equipe e proatividade.</i>
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>A Minha paixão por programação começou durante o curso técnico em automação industrial. Lá fiz meu TCC voltado ao backend, mas a vontade de entender como ajudar os usuários me despertou para o frontend,  o que apliquei no projeto me destacando como tester. No bootcamp eu usei a persistência programando e percebi o quanto aprender com a minha equipe é essencial.</i> 
                                             </Typography>
                                         </div>
                                     </div>
