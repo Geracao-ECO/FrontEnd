@@ -177,7 +177,7 @@ function Sobre() {
                     <Box mx={7}></Box>
 
                     <Card>
-                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQG09rFIt51OhQ/profile-displayphoto-shrink_200_200/0/1643053749158?e=1652313600&v=beta&t=69QPc0m-zn9oTHI1JL_0BBUpYaGw5LKlavFkE6XTo_w"
+                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQEZqCs3tjj-tg/profile-displayphoto-shrink_800_800/0/1647639693498?e=1653523200&v=beta&t=fjQ6dqb1-hzCZjrav1WN4bu4tdKxC1D3495100ri6pk"
                             alt="" />
 
                         <Box display="flex" alignItems="center" justifyContent="center">
