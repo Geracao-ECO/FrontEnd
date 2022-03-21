@@ -213,7 +213,7 @@ habilidades trabalho em equipe e proatividade.</i>
                                 <Box className='margemSobre' justifyContent='center'>
                                     <div id="mouse">
                                         <Box display="flex" justifyContent="center" >
-                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQG09rFIt51OhQ/profile-displayphoto-shrink_200_200/0/1643053749158?e=1652313600&v=beta&t=69QPc0m-zn9oTHI1JL_0BBUpYaGw5LKlavFkE6XTo_w" alt="[foto Vinícius Barbosa]" />
+                        <img className="foto" src="https://media-exp1.licdn.com/dms/image/C4D03AQEZqCs3tjj-tg/profile-displayphoto-shrink_800_800/0/1647639693498?e=1653523200&v=beta&t=fjQ6dqb1-hzCZjrav1WN4bu4tdKxC1D3495100ri6pk" alt="[foto Vinícius Barbosa]" />
 
                         </Box>
                                         <Typography className="nomessobre">
@@ -224,7 +224,8 @@ habilidades trabalho em equipe e proatividade.</i>
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Olá, sou Vinícius! Uma pessoa com identidade não-binária que usa qualquer pronome (ele, ela, elu).<br></br>
+Já fui Analista de Atendimento Bilíngue Jr e Agente de Suporte, atuei em projetos como implementação de suporte pelo WhatsApp, integração de uma filial da SumUp em São José dos Campos e hoje - além de ser Assistente Especializado III - sou uma pessoa formada em desenvolvimento web Java Fulltack Jr e busco adentrar na área da tecnologia em empresas com diversidade. Adoro ter novas ideias, decisões em time e muitas mão na massa! </i> 
                                             </Typography>
                                         </div>
                                     </div>
