@@ -7,12 +7,12 @@ Projeto Integrador referente ao bootcamp da Generation - Turma 41.
 **Problema social abordado:** OD6 - Água Potável e Saneamento.
 
 ## Integrantes do Grupo:
-- [Beatriz Santos](https://github.com/BiaSa3s) <a href="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" title="linkedin"><img src="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" width="20"/></a>
-- [Bruna Verrone](https://github.com/verronebruna) <a href="https://www.linkedin.com/in/bruna-verrone/" title="linkedin"><img src="https://www.linkedin.com/in/bruna-verrone/" width="20"/></a>
-- [Jéssica Dias](https://github.com/jessicasmd) <a href="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" title="linkedin"><img src="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" width="20"/></a>
-- [Kaciany Ramos](https://github.com/Kaciany) <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" title="linkedin"><img src="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" width="20"/></a>
-- [Natália Ferreira](https://github.com/nataliahisf) <a href="https://www.linkedin.com/in/natalia--ferreira/" title="linkedin"><img src="https://www.linkedin.com/in/natalia--ferreira/" width="20"/></a>
-- [Vinícius Barbosa](https://github.com/vvvvinicius) <a href="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" title="linkedin"><img src="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" width="20"/></a>
+- [Beatriz Santos](https://github.com/BiaSa3s) <a href="https://www.linkedin.com/in/beatriz-santos-s%C3%A1" title="linkedin"></a>
+- [Bruna Verrone](https://github.com/verronebruna) <a href="https://www.linkedin.com/in/bruna-verrone/" title="linkedin"></a>
+- [Jéssica Dias](https://github.com/jessicasmd) <a href="https://www.linkedin.com/in/j%C3%A9ssica-souza-mendes-dias-a126a2118/" title="linkedin"></a>
+- [Kaciany Ramos](https://github.com/Kaciany) <a href="https://www.linkedin.com/in/kaciany-jesus-89bb02192/" title="linkedin"></a>
+- [Natália Ferreira](https://github.com/nataliahisf) <a href="https://www.linkedin.com/in/natalia--ferreira/" title="linkedin"></a>
+- [Vinícius Barbosa](https://github.com/vvvvinicius) <a href="https://www.linkedin.com/in/vin%C3%ADcius-barbosa-a4355aa8/" title="linkedin"></a>
 
 ## Sobre o projeto
 
@@ -42,4 +42,6 @@ O projeto foi criado usando MySQL e Spring Boot para o backend e VSCode aplicand
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="60"/>
 
 ## Implementações futuras
-
+ - Conclusão README
+ - Ajuste tema por tipo de usuário
+ - Ajuste validação e-mail já cadastrado (tela de Cadastro novo usuário)

@@ -71,10 +71,10 @@ function Sobre() {
                                         </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
@@ -100,10 +100,10 @@ function Sobre() {
                                         </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i>
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
@@ -129,11 +129,10 @@ function Sobre() {
                                         </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Sou uma pessoa apaixonada por tecnologia e gosto muito de aprender, e tenho como principais
-habilidades trabalho em equipe e proatividade.</i> 
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
@@ -162,10 +161,10 @@ habilidades trabalho em equipe e proatividade.</i>
                                         </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
@@ -191,10 +190,10 @@ habilidades trabalho em equipe e proatividade.</i>
                                         </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
@@ -221,10 +220,10 @@ habilidades trabalho em equipe e proatividade.</i>
                             </Typography>
                                         <div id="show">
                                             <Typography className="subtitulo" gutterBottom>
-                                                <i>Sobre mim</i>
+                                                <i>Subtítulo</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Lorem Ipsum</i> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </Typography>
                                         </div>
                                     </div>
