@@ -132,7 +132,7 @@ function Sobre() {
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Sou uma pessoa apaixonada por tecnologia e gosto muito de aprender, e tenho como principais
+                                                <i>Olá sou a Jéssica! Sou uma pessoa apaixonada por tecnologia e gosto muito de aprender, e tenho como principais
 habilidades trabalho em equipe e proatividade.</i>
                                             </Typography>
                                         </div>
