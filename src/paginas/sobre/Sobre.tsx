@@ -74,7 +74,10 @@ function Sobre() {
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Sou uma pessoal comunicativa, dinâmica, tendo facilidade para assimilar e integrar novos conceitos e 
+                                                desenvolver trabalho em equipe. Tenho como objetivo de expandir meus conhecimentos, de adquirir novas
+                                                habilidades e desenvolver meu lado criativo. Tudo que a área da tecnologia me proporciona. 
+                                                </i> 
                                             </Typography>
                                         </div>
                                     </div>
@@ -103,7 +106,9 @@ function Sobre() {
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Sou formada em Comércio Exterior e tenho uma breve experiência na área. Sou proativa,
+                                                organizada, decidida e sempre em busca de aprender e aprimorar meus conhecimentos!
+                                                </i> 
                                             </Typography>
                                         </div>
                                     </div>
