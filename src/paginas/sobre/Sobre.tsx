@@ -165,7 +165,7 @@ habilidades trabalho em equipe e proatividade.</i>
                                                 <i>Sobre mim:</i>
                                             </Typography>
                                             <Typography className="textoSobre">
-                                                <i>Lorem Ipsum</i> 
+                                                <i>Fascinada por tecnologia desde a adolescência sempre quis entender como ela funciona, e essa curiosidade de aprender fez com que eu entrasse em uma jornada atrás de conhecimento suficiente para me tornar uma pessoa desenvolvedora, capaz de usar todas minhas habilidades para desenvolver coisas novas, hoje busco uma oportunidade que me proporcione não só crescimento profissional, mas também onde eu possa compartilhar todo meu aprendizado.</i> 
                                                  </Typography>
                                         </div>
                                     </div>
